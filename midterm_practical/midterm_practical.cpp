@@ -1,8 +1,12 @@
 #include <iostream>
+#include "Question.h"
 
 int RenderQuestion();
 
 int main() {
+	srand(time(0));
+	int displayQuestion = rand() % 4 + 1;
+	Question::RenderQuestion(displayQuestion, );
 	while (true) {
 		int selection = RenderQuestion();
 		switch (selection) {
